@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2021/03/10 23:12:05.705,=C:\Estudo\Livro_BorlandC++4\Project1PCH1.h</Transaction>
+    <Transaction>2021/03/10 23:12:05.972,=C:\Estudo\Livro_BorlandC++4\Unit1.cpp</Transaction>
+    <Transaction>2021/03/10 23:17:16.892,C:\Sistemas\ListaDePresenca\Fonte\UFrmPrincipal.dfm=C:\Estudo\Livro_BorlandC++4\Unit1.dfm</Transaction>
+    <Transaction>2021/03/10 23:17:16.892,C:\Sistemas\ListaDePresenca\Fonte\UFrmPrincipal.cpp=C:\Estudo\Livro_BorlandC++4\Unit1.cpp</Transaction>
+    <Transaction>2021/03/10 23:17:16.892,C:\Sistemas\ListaDePresenca\Fonte\UFrmPrincipal.h=C:\Estudo\Livro_BorlandC++4\Unit1.h</Transaction>
+    <Transaction>2021/03/10 23:17:33.087,C:\Sistemas\ListaDePresenca\Fonte\ControleDeListaDePresencaPch.h=C:\Estudo\Livro_BorlandC++4\Project1PCH1.h</Transaction>
+    <Transaction>2021/03/10 23:17:53.617,C:\Sistemas\ListaDePresenca\Fonte\ControleDeListaDePresencaPrj.cbproj=C:\Estudo\Livro_BorlandC++4\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
