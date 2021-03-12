@@ -14,3 +14,18 @@ __fastcall TFrmPrincipal::TFrmPrincipal(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+void __fastcall TFrmPrincipal::_EvConfigurarDataEHoraOnCreate(TObject *Sender)
+{
+	stbInformacao->Panels->Items[1]->Text =
+		FormatDateTime("'Araçatuba, SP,' dddd, dd ' de ' mmmm ' de ' yyyy",
+		Date() );
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFrmPrincipal::EvHoraCertaOnTimer(TObject *Sender)
+{
+	stbInformacao->Panels->Items[0]->Text =
+        TimeToStr( Time() );
+}
+//---------------------------------------------------------------------------
+
