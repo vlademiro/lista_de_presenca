@@ -19,4 +19,13 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
   OnClose = EvFecharCadastroOnClose
   PixelsPerInch = 96
   TextHeight = 19
+  object tlbCadastro: TToolBar
+    Left = 0
+    Top = 208
+    Width = 537
+    Height = 45
+    Align = alBottom
+    Caption = 'tlbCadastro'
+    TabOrder = 0
+  end
 end

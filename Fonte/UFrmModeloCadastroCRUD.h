@@ -7,10 +7,13 @@
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.ToolWin.hpp>
 //---------------------------------------------------------------------------
 class TFrmModeloCadastroCRUD : public TForm
 {
 __published:	// IDE-managed Components
+	TToolBar *tlbCadastro;
 	void __fastcall EvFecharCadastroOnClose(TObject *Sender, TCloseAction &Action);
 
 private:	// User declarations
