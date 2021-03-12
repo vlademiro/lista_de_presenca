@@ -20,3 +20,8 @@ void __fastcall TFrmModeloCadastroCRUD::EvFecharCadastroOnClose(TObject *Sender,
 	   Action = caFree;
 }
 //---------------------------------------------------------------------------
+void __fastcall TFrmModeloCadastroCRUD::EvActFecharOnExecute(TObject *Sender)
+{
+    Close();
+}
+//---------------------------------------------------------------------------

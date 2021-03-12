@@ -38,37 +38,27 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
     object btnInserir: TToolButton
       Left = 0
       Top = 0
-      Hint = 'Permite a digita'#231#227'o de novos dados para o registro'
-      Caption = 'Inserir'
-      ImageIndex = 0
+      Action = actInserir
     end
     object btnPesquisar: TToolButton
       Left = 74
       Top = 0
-      Hint = 'Pesquisa um registro na tabela'
-      Caption = 'Pesquisar'
-      ImageIndex = 1
+      Action = actPesquisar
     end
     object btnAtualizar: TToolButton
       Left = 148
       Top = 0
-      Hint = 'Atualiza o registro corrente na tabela'
-      Caption = 'Atualizar'
-      ImageIndex = 2
+      Action = actAtualizar
     end
     object btnExcluir: TToolButton
       Left = 222
       Top = 0
-      Hint = 'Exclui o registro corrente na tabela'
-      Caption = 'Excluir'
-      ImageIndex = 3
+      Action = actExcluir
     end
     object btnCancelar: TToolButton
       Left = 296
       Top = 0
-      Hint = 'Cancela as modifica'#231#245'es efetuadas no formul'#225'rio'
-      Caption = 'Cancelar'
-      ImageIndex = 4
+      Action = actCancelar
     end
     object ToolButton6: TToolButton
       Left = 370
@@ -81,9 +71,7 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
     object btnFechar: TToolButton
       Left = 491
       Top = 0
-      Hint = 'Fecha esse formul'#225'rio de cadastro'
-      Caption = 'Fechar'
-      ImageIndex = 5
+      Action = actFechar
     end
   end
   object dtsPrincipal: TDataSource
@@ -93,5 +81,40 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
   object aclCadastro: TActionList
     Left = 272
     Top = 176
+    object actInserir: TDataSetInsert
+      Category = 'Dataset'
+      Caption = '&Inserir'
+      Hint = 'Permite a digita'#231#227'o das informa'#231#245'es para mum novo registro'
+      ImageIndex = 4
+    end
+    object actExcluir: TDataSetDelete
+      Category = 'Dataset'
+      Caption = '&Excluir'
+      Hint = 'Exclui o registro corrente'
+      ImageIndex = 5
+    end
+    object actAtualizar: TDataSetPost
+      Category = 'Dataset'
+      Caption = '&Atualizar'
+      Hint = 'Atualiza os dados existentes no r registro corrente'
+      ImageIndex = 7
+    end
+    object actCancelar: TDataSetCancel
+      Category = 'Dataset'
+      Caption = '&Cancelar'
+      Hint = 'Cancela as altera'#231#245'es nas informa'#231#245'es do registro corrente'
+      ImageIndex = 8
+    end
+    object actPesquisar: TAction
+      Category = 'Dataset'
+      Caption = '&Pesquisar'
+      Hint = 'Pesquisa o registro existente'
+    end
+    object actFechar: TAction
+      Category = 'Janela'
+      Caption = '&Fechar'
+      Hint = 'Fecha esse formul'#225'rio'
+      OnExecute = EvActFecharOnExecute
+    end
   end
 end

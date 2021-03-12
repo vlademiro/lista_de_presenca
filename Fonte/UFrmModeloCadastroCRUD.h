@@ -12,6 +12,7 @@
 #include <Data.DB.hpp>
 #include <System.Actions.hpp>
 #include <Vcl.ActnList.hpp>
+#include <Vcl.DBActns.hpp>
 //---------------------------------------------------------------------------
 class TFrmModeloCadastroCRUD : public TForm
 {
@@ -26,7 +27,14 @@ __published:	// IDE-managed Components
 	TToolButton *btnFechar;
 	TDataSource *dtsPrincipal;
 	TActionList *aclCadastro;
+	TDataSetInsert *actInserir;
+	TDataSetDelete *actExcluir;
+	TDataSetPost *actAtualizar;
+	TDataSetCancel *actCancelar;
+	TAction *actPesquisar;
+	TAction *actFechar;
 	void __fastcall EvFecharCadastroOnClose(TObject *Sender, TCloseAction &Action);
+	void __fastcall EvActFecharOnExecute(TObject *Sender);
 
 private:	// User declarations
 public:		// User declarations
