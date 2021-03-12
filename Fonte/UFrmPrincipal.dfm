@@ -11,6 +11,7 @@ object FrmPrincipal: TFrmPrincipal
   Font.Name = 'Tahoma'
   Font.Style = []
   FormStyle = fsMDIForm
+  Menu = mnmPrincipal
   OldCreateOrder = False
   WindowState = wsMaximized
   OnCreate = EvConfigurarDataEHoraOnCreate
@@ -31,13 +32,63 @@ object FrmPrincipal: TFrmPrincipal
       end>
     ParentFont = True
     UseSystemFont = False
-    ExplicitLeft = 392
-    ExplicitTop = 192
-    ExplicitWidth = 0
   end
   object tmrHoraCerta: TTimer
     OnTimer = EvHoraCertaOnTimer
     Left = 608
     Top = 16
+  end
+  object mnmPrincipal: TMainMenu
+    Left = 376
+    Top = 192
+    object Cadastro1: TMenuItem
+      Caption = 'Cadastro'
+      object Curso1: TMenuItem
+        Caption = 'Curso...'
+      end
+      object Disciplina1: TMenuItem
+        Caption = 'Disciplina...'
+      end
+      object Professor1: TMenuItem
+        Caption = 'Professor...'
+      end
+      object Aluno1: TMenuItem
+        Caption = 'Aluno...'
+      end
+      object N1: TMenuItem
+        Caption = '-'
+      end
+      object Sair1: TMenuItem
+        Caption = 'Sair'
+        OnClick = EvEncerrarSistemaOnClick
+      end
+    end
+    object Associao1: TMenuItem
+      Caption = 'Associa'#231#227'o'
+      object Cursosdoprofessor1: TMenuItem
+        Caption = 'Cursos do professor...'
+      end
+      object Disciplinasdocurso1: TMenuItem
+        Caption = 'Disciplinas do curso...'
+      end
+      object Cursosdoaluno1: TMenuItem
+        Caption = 'Cursos do aluno...'
+      end
+    end
+    object Processo1: TMenuItem
+      Caption = 'Processo'
+      object Listadepresena1: TMenuItem
+        Caption = 'Lista de presen'#231'a...'
+      end
+    end
+    object Relatrio1: TMenuItem
+      Caption = 'Relat'#243'rio'
+      object Cursos1: TMenuItem
+        Caption = 'Cursos...'
+      end
+      object Emissodalistadepresena1: TMenuItem
+        Caption = 'Emiss'#227'o da lista de presen'#231'a...'
+      end
+    end
   end
 end

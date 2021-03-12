@@ -29,3 +29,9 @@ void __fastcall TFrmPrincipal::EvHoraCertaOnTimer(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TFrmPrincipal::EvEncerrarSistemaOnClick(TObject *Sender)
+{
+    Close();
+}
+//---------------------------------------------------------------------------
+
