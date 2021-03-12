@@ -9,6 +9,9 @@
 #include <Vcl.Forms.hpp>
 #include <Vcl.ComCtrls.hpp>
 #include <Vcl.ToolWin.hpp>
+#include <Data.DB.hpp>
+#include <System.Actions.hpp>
+#include <Vcl.ActnList.hpp>
 //---------------------------------------------------------------------------
 class TFrmModeloCadastroCRUD : public TForm
 {
@@ -21,6 +24,8 @@ __published:	// IDE-managed Components
 	TToolButton *btnCancelar;
 	TToolButton *ToolButton6;
 	TToolButton *btnFechar;
+	TDataSource *dtsPrincipal;
+	TActionList *aclCadastro;
 	void __fastcall EvFecharCadastroOnClose(TObject *Sender, TCloseAction &Action);
 
 private:	// User declarations

@@ -86,4 +86,12 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
       ImageIndex = 5
     end
   end
+  object dtsPrincipal: TDataSource
+    Left = 448
+    Top = 48
+  end
+  object aclCadastro: TActionList
+    Left = 272
+    Top = 176
+  end
 end
