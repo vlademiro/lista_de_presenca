@@ -11,6 +11,8 @@
 class TFrmModeloCadastroCRUD : public TForm
 {
 __published:	// IDE-managed Components
+	void __fastcall EvFecharCadastroOnClose(TObject *Sender, TCloseAction &Action);
+
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmModeloCadastroCRUD(TComponent* Owner);

@@ -14,3 +14,9 @@ __fastcall TFrmModeloCadastroCRUD::TFrmModeloCadastroCRUD(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+void __fastcall TFrmModeloCadastroCRUD::EvFecharCadastroOnClose(TObject *Sender,
+          TCloseAction &Action)
+{
+	   Action = caFree;
+}
+//---------------------------------------------------------------------------
