@@ -14,6 +14,13 @@ class TFrmModeloCadastroCRUD : public TForm
 {
 __published:	// IDE-managed Components
 	TToolBar *tlbCadastro;
+	TToolButton *btnInserir;
+	TToolButton *btnPesquisar;
+	TToolButton *btnAtualizar;
+	TToolButton *btnExcluir;
+	TToolButton *btnCancelar;
+	TToolButton *ToolButton6;
+	TToolButton *btnFechar;
 	void __fastcall EvFecharCadastroOnClose(TObject *Sender, TCloseAction &Action);
 
 private:	// User declarations
