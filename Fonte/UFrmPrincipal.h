@@ -15,7 +15,7 @@ class TFrmPrincipal : public TForm
 __published:	// IDE-managed Components
 	TStatusBar *stbInformacao;
 	TTimer *tmrHoraCerta;
-	void __fastcall _EvConfigurarDataEHoraOnCreate(TObject *Sender);
+	void __fastcall EvConfigurarDataEHoraOnCreate(TObject *Sender);
 	void __fastcall EvHoraCertaOnTimer(TObject *Sender);
 private:	// User declarations
 public:		// User declarations

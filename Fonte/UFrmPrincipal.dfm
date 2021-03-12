@@ -13,7 +13,7 @@ object FrmPrincipal: TFrmPrincipal
   FormStyle = fsMDIForm
   OldCreateOrder = False
   WindowState = wsMaximized
-  OnCreate = _EvConfigurarDataEHoraOnCreate
+  OnCreate = EvConfigurarDataEHoraOnCreate
   PixelsPerInch = 96
   TextHeight = 19
   object stbInformacao: TStatusBar

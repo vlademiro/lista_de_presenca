@@ -14,7 +14,7 @@ __fastcall TFrmPrincipal::TFrmPrincipal(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
-void __fastcall TFrmPrincipal::_EvConfigurarDataEHoraOnCreate(TObject *Sender)
+void __fastcall TFrmPrincipal::EvConfigurarDataEHoraOnCreate(TObject *Sender)
 {
 	stbInformacao->Panels->Items[1]->Text =
 		FormatDateTime("'Araçatuba, SP,' dddd, dd ' de ' mmmm ' de ' yyyy",
