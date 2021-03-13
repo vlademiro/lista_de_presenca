@@ -91,8 +91,8 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
   object grbCadastro: TGroupBox
     Left = 8
     Top = 8
-    Width = 185
-    Height = 105
+    Width = 561
+    Height = 304
     Caption = 'grbCadastro'
     TabOrder = 2
   end
