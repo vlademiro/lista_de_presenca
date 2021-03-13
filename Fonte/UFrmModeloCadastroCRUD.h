@@ -13,6 +13,8 @@
 #include <System.Actions.hpp>
 #include <Vcl.ActnList.hpp>
 #include <Vcl.DBActns.hpp>
+#include <Vcl.DBCtrls.hpp>
+#include <Vcl.ExtCtrls.hpp>
 //---------------------------------------------------------------------------
 class TFrmModeloCadastroCRUD : public TForm
 {
@@ -33,6 +35,8 @@ __published:	// IDE-managed Components
 	TDataSetCancel *actCancelar;
 	TAction *actPesquisar;
 	TAction *actFechar;
+	TDBNavigator *dbnCadastro;
+	TGroupBox *grbCadastro;
 	void __fastcall EvFecharCadastroOnClose(TObject *Sender, TCloseAction &Action);
 	void __fastcall EvActFecharOnExecute(TObject *Sender);
 

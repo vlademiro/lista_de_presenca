@@ -4,8 +4,8 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'FrmModeloCadastroCRUD'
-  ClientHeight = 356
-  ClientWidth = 566
+  ClientHeight = 363
+  ClientWidth = 608
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -21,8 +21,8 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
   TextHeight = 19
   object tlbCadastro: TToolBar
     Left = 0
-    Top = 311
-    Width = 566
+    Top = 318
+    Width = 608
     Height = 45
     Align = alBottom
     ButtonHeight = 27
@@ -33,8 +33,8 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
     ShowHint = True
     TabOrder = 0
     Wrapable = False
-    ExplicitTop = 208
-    ExplicitWidth = 537
+    ExplicitTop = 311
+    ExplicitWidth = 566
     object btnInserir: TToolButton
       Left = 0
       Top = 0
@@ -74,13 +74,35 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
       Action = actFechar
     end
   end
+  object dbnCadastro: TDBNavigator
+    Left = 575
+    Top = 0
+    Width = 33
+    Height = 318
+    DataSource = dtsPrincipal
+    VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
+    Align = alRight
+    Kind = dbnVertical
+    TabOrder = 1
+    ExplicitLeft = 115
+    ExplicitTop = -3
+    ExplicitHeight = 308
+  end
+  object grbCadastro: TGroupBox
+    Left = 8
+    Top = 8
+    Width = 185
+    Height = 105
+    Caption = 'grbCadastro'
+    TabOrder = 2
+  end
   object dtsPrincipal: TDataSource
-    Left = 448
-    Top = 48
+    Left = 368
+    Top = 24
   end
   object aclCadastro: TActionList
-    Left = 272
-    Top = 176
+    Left = 288
+    Top = 16
     object actInserir: TDataSetInsert
       Category = 'Dataset'
       Caption = '&Inserir'
