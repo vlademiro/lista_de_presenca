@@ -16,10 +16,17 @@
 #include <Vcl.ToolWin.hpp>
 #include <Vcl.DBCtrls.hpp>
 #include <Vcl.ExtCtrls.hpp>
+#include <Vcl.Mask.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastroDeCurso : public TFrmModeloCadastroCRUD
 {
 __published:	// IDE-managed Components
+	TDBEdit *dbeCodigo;
+	TDBEdit *dbeNOME;
+	TDBComboBox *dbcbPERIODO;
+	TLabel *Label1;
+	TLabel *Label2;
+	TLabel *Label3;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmCadastroDeCurso(TComponent* Owner);
