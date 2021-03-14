@@ -20,8 +20,8 @@ object DtmListaDePresenca: TDtmListaDePresenca
     Connection = cnxListaDePresenca
     SQL.Strings = (
       'select ALU_RA, ALU_NOME from ALUNO')
-    Left = 112
-    Top = 160
+    Left = 104
+    Top = 208
     object qryAlunoALU_RA: TLargeintField
       DisplayLabel = 'C'#243'digo do aluno'
       FieldKind = fkInternalCalc
@@ -44,6 +44,7 @@ object DtmListaDePresenca: TDtmListaDePresenca
     Top = 56
   end
   object qryCurso: TFDQuery
+    Active = True
     Connection = cnxListaDePresenca
     SQL.Strings = (
       'select cur_codigo, cur_nome, cur_periodo from curso')
@@ -83,5 +84,26 @@ object DtmListaDePresenca: TDtmListaDePresenca
     ProviderName = 'dspCurso'
     Left = 232
     Top = 264
+    object cdsCursoCUR_CODIGO: TIntegerField
+      DisplayLabel = 'C'#243'digo'
+      FieldName = 'CUR_CODIGO'
+      Origin = 'CUR_CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
+      Required = True
+    end
+    object cdsCursoCUR_NOME: TStringField
+      DisplayLabel = 'Nome'
+      FieldName = 'CUR_NOME'
+      Origin = 'CUR_NOME'
+      Required = True
+      Size = 50
+    end
+    object cdsCursoCUR_PERIODO: TStringField
+      DisplayLabel = 'Per'#237'odo'
+      FieldName = 'CUR_PERIODO'
+      Origin = 'CUR_PERIODO'
+      Required = True
+      Size = 12
+    end
   end
 end

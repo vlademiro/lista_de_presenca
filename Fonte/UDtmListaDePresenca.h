@@ -43,6 +43,9 @@ __published:	// IDE-managed Components
 	TStringField *qryCursoCUR_PERIODO;
 	TDataSetProvider *dspCurso;
 	TClientDataSet *cdsCurso;
+	TIntegerField *cdsCursoCUR_CODIGO;
+	TStringField *cdsCursoCUR_NOME;
+	TStringField *cdsCursoCUR_PERIODO;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TDtmListaDePresenca(TComponent* Owner);
