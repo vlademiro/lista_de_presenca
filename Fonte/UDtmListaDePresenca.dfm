@@ -73,7 +73,15 @@ object DtmListaDePresenca: TDtmListaDePresenca
   end
   object dspCurso: TDataSetProvider
     DataSet = qryCurso
-    Left = 200
-    Top = 272
+    Left = 168
+    Top = 264
+  end
+  object cdsCurso: TClientDataSet
+    Active = True
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspCurso'
+    Left = 232
+    Top = 264
   end
 end

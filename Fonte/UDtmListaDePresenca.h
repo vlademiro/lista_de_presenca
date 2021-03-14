@@ -26,6 +26,7 @@
 #include <FireDAC.UI.Intf.hpp>
 #include <FireDAC.VCLUI.Wait.hpp>
 #include <Datasnap.Provider.hpp>
+#include <Datasnap.DBClient.hpp>
 //---------------------------------------------------------------------------
 class TDtmListaDePresenca : public TDataModule
 {
@@ -41,6 +42,7 @@ __published:	// IDE-managed Components
 	TStringField *qryCursoCUR_NOME;
 	TStringField *qryCursoCUR_PERIODO;
 	TDataSetProvider *dspCurso;
+	TClientDataSet *cdsCurso;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TDtmListaDePresenca(TComponent* Owner);
