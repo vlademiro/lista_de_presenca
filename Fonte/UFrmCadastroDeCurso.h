@@ -14,6 +14,8 @@
 #include <Vcl.ComCtrls.hpp>
 #include <Vcl.DBActns.hpp>
 #include <Vcl.ToolWin.hpp>
+#include <Vcl.DBCtrls.hpp>
+#include <Vcl.ExtCtrls.hpp>
 //---------------------------------------------------------------------------
 class TFrmCadastroDeCurso : public TFrmModeloCadastroCRUD
 {

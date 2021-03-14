@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "UFrmCadastroDeCurso.h"
+#include "UDtmListaDePresenca.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma link "UFrmModeloCadastroCRUD"
