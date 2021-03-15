@@ -81,6 +81,8 @@ object DtmListaDePresenca: TDtmListaDePresenca
     Aggregates = <>
     Params = <>
     ProviderName = 'dspCurso'
+    AfterPost = EvAplicarModificacoesParaOBanco
+    AfterDelete = EvAplicarModificacoesParaOBanco
     Left = 232
     Top = 264
     object cdsCursoCUR_CODIGO: TIntegerField
@@ -153,6 +155,8 @@ object DtmListaDePresenca: TDtmListaDePresenca
     Aggregates = <>
     Params = <>
     ProviderName = 'dspDisciplina'
+    AfterPost = EvAplicarModificacoesParaOBanco
+    AfterDelete = EvAplicarModificacoesParaOBanco
     Left = 232
     Top = 320
     object cdsDisciplinaDIS_CODIGO: TLargeintField
@@ -176,6 +180,8 @@ object DtmListaDePresenca: TDtmListaDePresenca
     Aggregates = <>
     Params = <>
     ProviderName = 'dspProfessor'
+    AfterPost = EvAplicarModificacoesParaOBanco
+    AfterDelete = EvAplicarModificacoesParaOBanco
     Left = 232
     Top = 376
     object cdsProfessorPRO_CODIGO: TIntegerField
