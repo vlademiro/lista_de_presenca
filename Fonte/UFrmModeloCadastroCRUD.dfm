@@ -33,8 +33,6 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
     ShowHint = True
     TabOrder = 0
     Wrapable = False
-    ExplicitTop = 311
-    ExplicitWidth = 566
     object btnInserir: TToolButton
       Left = 0
       Top = 0
@@ -84,17 +82,19 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
     Align = alRight
     Kind = dbnVertical
     TabOrder = 1
-    ExplicitLeft = 115
-    ExplicitTop = -3
-    ExplicitHeight = 308
   end
   object grbCadastro: TGroupBox
-    Left = 8
-    Top = 8
-    Width = 561
-    Height = 304
-    Caption = 'grbCadastro'
+    Left = 0
+    Top = 0
+    Width = 575
+    Height = 318
+    Align = alClient
+    Caption = 'Dados'
     TabOrder = 2
+    ExplicitLeft = 8
+    ExplicitTop = 8
+    ExplicitWidth = 561
+    ExplicitHeight = 304
   end
   object dtsPrincipal: TDataSource
     Left = 368

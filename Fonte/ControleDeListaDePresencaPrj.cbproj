@@ -172,12 +172,12 @@
             <BuildOrder>2</BuildOrder>
         </CppCompile>
         <FormResources Include="UFrmCadastroDeDisciplina.dfm"/>
+        <FormResources Include="UFrmCadastroDeProfessor.dfm"/>
         <FormResources Include="UFrmModeloCadastroCRUD.dfm"/>
         <FormResources Include="UFrmPrincipal.dfm"/>
         <FormResources Include="UFrmCadastroDeCurso.dfm"/>
         <FormResources Include="UDtmListaDePresenca.dfm"/>
         <FormResources Include="UFrmCadastroDeAluno.dfm"/>
-        <FormResources Include="UFrmCadastroDeProfessor.dfm"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

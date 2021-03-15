@@ -5,12 +5,12 @@
 #include <tchar.h>
 //---------------------------------------------------------------------------
 USEFORM("UFrmCadastroDeDisciplina.cpp", FrmCadastroDeDisciplina);
+USEFORM("UFrmCadastroDeProfessor.cpp", FrmCadastroDeProfessor);
 USEFORM("UFrmModeloCadastroCRUD.cpp", FrmModeloCadastroCRUD);
 USEFORM("UFrmPrincipal.cpp", FrmPrincipal);
 USEFORM("UFrmCadastroDeCurso.cpp", FrmCadastroDeCurso);
 USEFORM("UDtmListaDePresenca.cpp", DtmListaDePresenca); /* TDataModule: File Type */
 USEFORM("UFrmCadastroDeAluno.cpp", FrmCadastroDeAluno);
-USEFORM("UFrmCadastroDeProfessor.cpp", FrmCadastroDeProfessor);
 //---------------------------------------------------------------------------
 int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 {
@@ -22,6 +22,8 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 		Application->CreateForm(__classid(TFrmPrincipal), &FrmPrincipal);
 		Application->CreateForm(__classid(TFrmCadastroDeAluno), &FrmCadastroDeAluno);
 		Application->CreateForm(__classid(TFrmCadastroDeProfessor), &FrmCadastroDeProfessor);
+		Application->CreateForm(__classid(TFrmCadastroDeDisciplina), &FrmCadastroDeDisciplina);
+		Application->CreateForm(__classid(TFrmCadastroDeCurso), &FrmCadastroDeCurso);
 		Application->Run();
 	}
 	catch (Exception &exception)

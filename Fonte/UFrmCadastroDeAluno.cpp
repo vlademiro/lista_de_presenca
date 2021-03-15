@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "UFrmCadastroDeAluno.h"
+#include "UDtmListaDePresenca.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma link "UFrmModeloCadastroCRUD"
@@ -15,3 +16,5 @@ __fastcall TFrmCadastroDeAluno::TFrmCadastroDeAluno(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+
+

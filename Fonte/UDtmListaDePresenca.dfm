@@ -16,12 +16,11 @@ object DtmListaDePresenca: TDtmListaDePresenca
     Top = 48
   end
   object qryAluno: TFDQuery
-    Active = True
     Connection = cnxListaDePresenca
     SQL.Strings = (
       'select ALU_RA, ALU_NOME from ALUNO')
     Left = 104
-    Top = 208
+    Top = 216
     object qryAlunoALU_RA: TLargeintField
       DisplayLabel = 'C'#243'digo do aluno'
       FieldKind = fkInternalCalc
@@ -105,5 +104,94 @@ object DtmListaDePresenca: TDtmListaDePresenca
       Required = True
       Size = 12
     end
+  end
+  object dspAluno: TDataSetProvider
+    DataSet = qryAluno
+    Left = 176
+    Top = 216
+  end
+  object cdsAluno: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspAluno'
+    Left = 240
+    Top = 216
+    object cdsAlunoALU_RA: TLargeintField
+      DisplayLabel = 'C'#243'digo'
+      FieldName = 'ALU_RA'
+      ReadOnly = True
+      Required = True
+    end
+    object cdsAlunoALU_NOME: TStringField
+      DisplayLabel = 'Nome do aluno'
+      FieldName = 'ALU_NOME'
+      Required = True
+      Size = 60
+    end
+  end
+  object qryDisciplina: TFDQuery
+    Connection = cnxListaDePresenca
+    SQL.Strings = (
+      'select dis_codigo, dis_nome, dis_limite_faltas from disciplina')
+    Left = 104
+    Top = 328
+  end
+  object qryProfessor: TFDQuery
+    Connection = cnxListaDePresenca
+    SQL.Strings = (
+      'select pro_codigo, pro_nome from professor')
+    Left = 104
+    Top = 384
+  end
+  object cdsDisciplina: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspDisciplina'
+    Left = 232
+    Top = 320
+    object cdsDisciplinaDIS_CODIGO: TLargeintField
+      DisplayLabel = 'C'#243'digo'
+      FieldName = 'DIS_CODIGO'
+      Required = True
+    end
+    object cdsDisciplinaDIS_NOME: TStringField
+      DisplayLabel = 'Nome'
+      FieldName = 'DIS_NOME'
+      Required = True
+      Size = 60
+    end
+    object cdsDisciplinaDIS_LIMITE_FALTAS: TIntegerField
+      DisplayLabel = 'Limite de faltas'
+      FieldName = 'DIS_LIMITE_FALTAS'
+      Required = True
+    end
+  end
+  object cdsProfessor: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspProfessor'
+    Left = 232
+    Top = 376
+    object cdsProfessorPRO_CODIGO: TIntegerField
+      DisplayLabel = 'C'#243'digo'
+      FieldName = 'PRO_CODIGO'
+      Required = True
+    end
+    object cdsProfessorPRO_NOME: TStringField
+      DisplayLabel = 'Nome do professor'
+      FieldName = 'PRO_NOME'
+      Required = True
+      Size = 60
+    end
+  end
+  object dspDisciplina: TDataSetProvider
+    DataSet = qryDisciplina
+    Left = 168
+    Top = 328
+  end
+  object dspProfessor: TDataSetProvider
+    DataSet = qryProfessor
+    Left = 168
+    Top = 384
   end
 end

@@ -46,6 +46,22 @@ __published:	// IDE-managed Components
 	TIntegerField *cdsCursoCUR_CODIGO;
 	TStringField *cdsCursoCUR_NOME;
 	TStringField *cdsCursoCUR_PERIODO;
+	TDataSetProvider *dspAluno;
+	TClientDataSet *cdsAluno;
+	TLargeintField *cdsAlunoALU_RA;
+	TStringField *cdsAlunoALU_NOME;
+	TFDQuery *qryDisciplina;
+	TFDQuery *qryProfessor;
+	TClientDataSet *cdsDisciplina;
+	TClientDataSet *cdsProfessor;
+	TDataSetProvider *dspDisciplina;
+	TDataSetProvider *dspProfessor;
+	TLargeintField *cdsDisciplinaDIS_CODIGO;
+	TStringField *cdsDisciplinaDIS_NOME;
+	TIntegerField *cdsDisciplinaDIS_LIMITE_FALTAS;
+	TIntegerField *cdsProfessorPRO_CODIGO;
+	TStringField *cdsProfessorPRO_NOME;
+
 private:	// User declarations
 public:		// User declarations
 	__fastcall TDtmListaDePresenca(TComponent* Owner);
