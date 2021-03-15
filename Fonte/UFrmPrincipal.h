@@ -36,6 +36,10 @@ __published:	// IDE-managed Components
 	void __fastcall EvConfigurarDataEHoraOnCreate(TObject *Sender);
 	void __fastcall EvHoraCertaOnTimer(TObject *Sender);
 	void __fastcall EvEncerrarSistemaOnClick(TObject *Sender);
+	void __fastcall EvAtivarCadastroDeCursoOnClick(TObject *Sender);
+	void __fastcall EvAtivarCadastroDeDisciplinaOnClick(TObject *Sender);
+	void __fastcall EvAtivarCadastroDeProfessorOnClick(TObject *Sender);
+	void __fastcall EvAtivarCadastroDeAlunoOnClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TFrmPrincipal(TComponent* Owner);

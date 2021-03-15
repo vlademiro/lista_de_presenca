@@ -45,15 +45,19 @@ object FrmPrincipal: TFrmPrincipal
       Caption = 'Cadastro'
       object Curso1: TMenuItem
         Caption = 'Curso...'
+        OnClick = EvAtivarCadastroDeCursoOnClick
       end
       object Disciplina1: TMenuItem
         Caption = 'Disciplina...'
+        OnClick = EvAtivarCadastroDeDisciplinaOnClick
       end
       object Professor1: TMenuItem
         Caption = 'Professor...'
+        OnClick = EvAtivarCadastroDeProfessorOnClick
       end
       object Aluno1: TMenuItem
         Caption = 'Aluno...'
+        OnClick = EvAtivarCadastroDeAlunoOnClick
       end
       object N1: TMenuItem
         Caption = '-'

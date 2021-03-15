@@ -4,6 +4,10 @@
 #pragma hdrstop
 
 #include "UFrmPrincipal.h"
+#include "UFrmCadastroDeAluno.h"
+#include "UFrmCadastroDeCurso.h"
+#include "UFrmCadastroDeDisciplina.h"
+#include "UFrmCadastroDeProfessor.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -32,6 +36,32 @@ void __fastcall TFrmPrincipal::EvHoraCertaOnTimer(TObject *Sender)
 void __fastcall TFrmPrincipal::EvEncerrarSistemaOnClick(TObject *Sender)
 {
     Close();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFrmPrincipal::EvAtivarCadastroDeCursoOnClick(TObject *Sender)
+{
+	new TFrmCadastroDeCurso( this );
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFrmPrincipal::EvAtivarCadastroDeDisciplinaOnClick(TObject *Sender)
+
+{
+	new TFrmCadastroDeDisciplina( this );
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFrmPrincipal::EvAtivarCadastroDeProfessorOnClick(TObject *Sender)
+
+{
+	new TFrmCadastroDeProfessor( this );
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFrmPrincipal::EvAtivarCadastroDeAlunoOnClick(TObject *Sender)
+{
+    new TFrmCadastroDeAluno( this );
 }
 //---------------------------------------------------------------------------
 
