@@ -5,6 +5,7 @@ object DtmListaDePresenca: TDtmListaDePresenca
   object cnxListaDePresenca: TFDConnection
     Params.Strings = (
       'ConnectionDef=ListaDePresencaDB')
+    Connected = True
     LoginPrompt = False
     Left = 115
     Top = 52
@@ -15,6 +16,7 @@ object DtmListaDePresenca: TDtmListaDePresenca
     Top = 48
   end
   object qryAluno: TFDQuery
+    Active = True
     Connection = cnxListaDePresenca
     SQL.Strings = (
       'select ALU_RA, ALU_NOME from ALUNO')
@@ -109,6 +111,7 @@ object DtmListaDePresenca: TDtmListaDePresenca
     Top = 216
   end
   object cdsAluno: TClientDataSet
+    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'dspAluno'
@@ -119,12 +122,15 @@ object DtmListaDePresenca: TDtmListaDePresenca
     object cdsAlunoALU_RA: TLargeintField
       DisplayLabel = 'C'#243'digo'
       FieldName = 'ALU_RA'
+      Origin = 'ALU_RA'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
       ReadOnly = True
       Required = True
     end
     object cdsAlunoALU_NOME: TStringField
       DisplayLabel = 'Nome do aluno'
       FieldName = 'ALU_NOME'
+      Origin = 'ALU_NOME'
       Required = True
       Size = 60
     end
