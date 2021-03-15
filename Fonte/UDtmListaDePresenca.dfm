@@ -5,7 +5,6 @@ object DtmListaDePresenca: TDtmListaDePresenca
   object cnxListaDePresenca: TFDConnection
     Params.Strings = (
       'ConnectionDef=ListaDePresencaDB')
-    Connected = True
     LoginPrompt = False
     Left = 115
     Top = 52
@@ -43,7 +42,6 @@ object DtmListaDePresenca: TDtmListaDePresenca
     Top = 56
   end
   object qryCurso: TFDQuery
-    Active = True
     Connection = cnxListaDePresenca
     SQL.Strings = (
       'select cur_codigo, cur_nome, cur_periodo from curso')
@@ -114,6 +112,8 @@ object DtmListaDePresenca: TDtmListaDePresenca
     Aggregates = <>
     Params = <>
     ProviderName = 'dspAluno'
+    AfterPost = EvAplicarModificacoesParaOBanco
+    AfterDelete = EvAplicarModificacoesParaOBanco
     Left = 240
     Top = 216
     object cdsAlunoALU_RA: TLargeintField

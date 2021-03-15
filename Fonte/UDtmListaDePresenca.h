@@ -61,6 +61,7 @@ __published:	// IDE-managed Components
 	TIntegerField *cdsDisciplinaDIS_LIMITE_FALTAS;
 	TIntegerField *cdsProfessorPRO_CODIGO;
 	TStringField *cdsProfessorPRO_NOME;
+	void __fastcall EvAplicarModificacoesParaOBanco(TDataSet *DataSet);
 
 private:	// User declarations
 public:		// User declarations

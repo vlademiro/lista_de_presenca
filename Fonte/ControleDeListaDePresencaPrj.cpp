@@ -20,10 +20,6 @@ int WINAPI _tWinMain(HINSTANCE, HINSTANCE, LPTSTR, int)
 		Application->MainFormOnTaskBar = true;
 		Application->CreateForm(__classid(TDtmListaDePresenca), &DtmListaDePresenca);
 		Application->CreateForm(__classid(TFrmPrincipal), &FrmPrincipal);
-		Application->CreateForm(__classid(TFrmCadastroDeAluno), &FrmCadastroDeAluno);
-		Application->CreateForm(__classid(TFrmCadastroDeProfessor), &FrmCadastroDeProfessor);
-		Application->CreateForm(__classid(TFrmCadastroDeDisciplina), &FrmCadastroDeDisciplina);
-		Application->CreateForm(__classid(TFrmCadastroDeCurso), &FrmCadastroDeCurso);
 		Application->Run();
 	}
 	catch (Exception &exception)

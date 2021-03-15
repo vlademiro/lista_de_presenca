@@ -16,3 +16,10 @@ __fastcall TDtmListaDePresenca::TDtmListaDePresenca(TComponent* Owner)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TDtmListaDePresenca::EvAplicarModificacoesParaOBanco(TDataSet *DataSet)
+
+{
+    cdsAluno->ApplyUpdates(0);
+}
+//---------------------------------------------------------------------------
+
