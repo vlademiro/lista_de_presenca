@@ -16,3 +16,4 @@ __fastcall TFrmCadastroDeCurso::TFrmCadastroDeCurso(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+

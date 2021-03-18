@@ -44,6 +44,7 @@ object DtmListaDePresenca: TDtmListaDePresenca
     Top = 56
   end
   object qryCurso: TFDQuery
+    Active = True
     Connection = cnxListaDePresenca
     SQL.Strings = (
       'select cur_codigo, cur_nome, cur_periodo from curso')
@@ -126,7 +127,6 @@ object DtmListaDePresenca: TDtmListaDePresenca
       FieldName = 'ALU_RA'
       Origin = 'ALU_RA'
       ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
-      ReadOnly = True
       Required = True
     end
     object cdsAlunoALU_NOME: TStringField
@@ -138,6 +138,7 @@ object DtmListaDePresenca: TDtmListaDePresenca
     end
   end
   object qryDisciplina: TFDQuery
+    Active = True
     Connection = cnxListaDePresenca
     SQL.Strings = (
       'select dis_codigo, dis_nome, dis_limite_faltas from disciplina')
@@ -145,6 +146,7 @@ object DtmListaDePresenca: TDtmListaDePresenca
     Top = 328
   end
   object qryProfessor: TFDQuery
+    Active = True
     Connection = cnxListaDePresenca
     SQL.Strings = (
       'select pro_codigo, pro_nome from professor')
@@ -152,6 +154,7 @@ object DtmListaDePresenca: TDtmListaDePresenca
     Top = 384
   end
   object cdsDisciplina: TClientDataSet
+    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'dspDisciplina'
@@ -162,21 +165,26 @@ object DtmListaDePresenca: TDtmListaDePresenca
     object cdsDisciplinaDIS_CODIGO: TLargeintField
       DisplayLabel = 'C'#243'digo'
       FieldName = 'DIS_CODIGO'
+      Origin = 'DIS_CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
       Required = True
     end
     object cdsDisciplinaDIS_NOME: TStringField
       DisplayLabel = 'Nome'
       FieldName = 'DIS_NOME'
+      Origin = 'DIS_NOME'
       Required = True
       Size = 60
     end
     object cdsDisciplinaDIS_LIMITE_FALTAS: TIntegerField
       DisplayLabel = 'Limite de faltas'
       FieldName = 'DIS_LIMITE_FALTAS'
+      Origin = 'DIS_LIMITE_FALTAS'
       Required = True
     end
   end
   object cdsProfessor: TClientDataSet
+    Active = True
     Aggregates = <>
     Params = <>
     ProviderName = 'dspProfessor'
@@ -187,11 +195,14 @@ object DtmListaDePresenca: TDtmListaDePresenca
     object cdsProfessorPRO_CODIGO: TIntegerField
       DisplayLabel = 'C'#243'digo'
       FieldName = 'PRO_CODIGO'
+      Origin = 'PRO_CODIGO'
+      ProviderFlags = [pfInUpdate, pfInWhere, pfInKey]
       Required = True
     end
     object cdsProfessorPRO_NOME: TStringField
       DisplayLabel = 'Nome do professor'
       FieldName = 'PRO_NOME'
+      Origin = 'PRO_NOME'
       Required = True
       Size = 60
     end

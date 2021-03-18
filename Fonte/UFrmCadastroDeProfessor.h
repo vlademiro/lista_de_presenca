@@ -23,7 +23,6 @@ class TFrmCadastroDeProfessor : public TFrmModeloCadastroCRUD
 __published:	// IDE-managed Components
 	TLabel *Label1;
 	TDBEdit *dbeCodigo;
-	TDataSource *DataSource1;
 	TLabel *Label2;
 	TDBEdit *dbeNome;
 private:	// User declarations

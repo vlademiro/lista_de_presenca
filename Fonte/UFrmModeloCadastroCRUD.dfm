@@ -91,10 +91,6 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
     Align = alClient
     Caption = 'Dados'
     TabOrder = 2
-    ExplicitLeft = 8
-    ExplicitTop = 8
-    ExplicitWidth = 561
-    ExplicitHeight = 304
   end
   object dtsPrincipal: TDataSource
     Left = 368
@@ -108,24 +104,28 @@ object FrmModeloCadastroCRUD: TFrmModeloCadastroCRUD
       Caption = '&Inserir'
       Hint = 'Permite a digita'#231#227'o das informa'#231#245'es para mum novo registro'
       ImageIndex = 4
+      DataSource = dtsPrincipal
     end
     object actExcluir: TDataSetDelete
       Category = 'Dataset'
       Caption = '&Excluir'
       Hint = 'Exclui o registro corrente'
       ImageIndex = 5
+      DataSource = dtsPrincipal
     end
     object actAtualizar: TDataSetPost
       Category = 'Dataset'
       Caption = '&Atualizar'
       Hint = 'Atualiza os dados existentes no r registro corrente'
       ImageIndex = 7
+      DataSource = dtsPrincipal
     end
     object actCancelar: TDataSetCancel
       Category = 'Dataset'
       Caption = '&Cancelar'
       Hint = 'Cancela as altera'#231#245'es nas informa'#231#245'es do registro corrente'
       ImageIndex = 8
+      DataSource = dtsPrincipal
     end
     object actPesquisar: TAction
       Category = 'Dataset'

@@ -6,14 +6,16 @@ inherited FrmCadastroDeAluno: TFrmCadastroDeAluno
   TextHeight = 19
   inherited tlbCadastro: TToolBar
     Top = 171
+    ExplicitTop = 171
   end
   inherited dbnCadastro: TDBNavigator
     Height = 171
     Hints.Strings = ()
+    ExplicitHeight = 171
   end
   inherited grbCadastro: TGroupBox
-    Height = 161
-    ExplicitHeight = 161
+    Height = 171
+    ExplicitHeight = 171
     object Label1: TLabel
       Left = 16
       Top = 63
@@ -50,6 +52,6 @@ inherited FrmCadastroDeAluno: TFrmCadastroDeAluno
     end
   end
   inherited dtsPrincipal: TDataSource
-    DataSet = DtmListaDePresenca.qryAluno
+    DataSet = DtmListaDePresenca.cdsAluno
   end
 end

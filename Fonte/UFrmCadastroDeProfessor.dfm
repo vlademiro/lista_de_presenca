@@ -10,7 +10,7 @@ inherited FrmCadastroDeProfessor: TFrmCadastroDeProfessor
     Top = 162
     Width = 749
     Height = 29
-    ExplicitTop = 289
+    ExplicitTop = 162
     ExplicitWidth = 749
     ExplicitHeight = 29
   end
@@ -18,14 +18,14 @@ inherited FrmCadastroDeProfessor: TFrmCadastroDeProfessor
     Left = 716
     Height = 162
     Hints.Strings = ()
+    ExplicitLeft = 716
+    ExplicitHeight = 162
   end
   inherited grbCadastro: TGroupBox
     Width = 716
     Height = 162
-    ExplicitLeft = 0
-    ExplicitTop = 0
-    ExplicitWidth = 575
-    ExplicitHeight = 318
+    ExplicitWidth = 716
+    ExplicitHeight = 162
     object Label1: TLabel
       Left = 32
       Top = 59
@@ -48,7 +48,7 @@ inherited FrmCadastroDeProfessor: TFrmCadastroDeProfessor
       Width = 121
       Height = 27
       DataField = 'PRO_CODIGO'
-      DataSource = DataSource1
+      DataSource = dtsPrincipal
       TabOrder = 0
     end
     object dbeNome: TDBEdit
@@ -57,13 +57,11 @@ inherited FrmCadastroDeProfessor: TFrmCadastroDeProfessor
       Width = 500
       Height = 27
       DataField = 'PRO_NOME'
-      DataSource = DataSource1
+      DataSource = dtsPrincipal
       TabOrder = 1
     end
   end
-  object DataSource1: TDataSource
+  inherited dtsPrincipal: TDataSource
     DataSet = DtmListaDePresenca.cdsProfessor
-    Left = 296
-    Top = 184
   end
 end

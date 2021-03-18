@@ -20,7 +20,8 @@ void __fastcall TDtmListaDePresenca::EvAplicarModificacoesParaOBanco(TDataSet *D
 
 {
 
-	TClientDataSet * cds = 0;
+	TClientDataSet * cds = NULL;
+    cds = dynamic_cast<TClientDataSet *>(DataSet);
     cds->ApplyUpdates(0);
 
 }
