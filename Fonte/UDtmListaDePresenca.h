@@ -64,6 +64,9 @@ __published:	// IDE-managed Components
 	TFDQuery *qryAssProfessor;
 	TDataSetProvider *dspAssProfessor;
 	TClientDataSet *cdsAssProfessor;
+	TFDQuery *qryCursosDoProfessor;
+	TDataSource *dtsCursosDoProfessor;
+	TClientDataSet *cdsCursosDoProfessor;
 	void __fastcall EvAplicarModificacoesParaOBanco(TDataSet *DataSet);
 
 private:	// User declarations

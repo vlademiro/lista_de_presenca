@@ -238,4 +238,31 @@ object DtmListaDePresenca: TDtmListaDePresenca
     Left = 272
     Top = 448
   end
+  object qryCursosDoProfessor: TFDQuery
+    Active = True
+    Connection = cnxListaDePresenca
+    SQL.Strings = (
+      'select CUR_CODIGO, PRO_CODIGO '
+      'from curso_contem_professor '
+      'WHERE pro_codigo = :pro_codigo')
+    Left = 104
+    Top = 504
+    ParamData = <
+      item
+        Name = 'PRO_CODIGO'
+        DataType = ftInteger
+        ParamType = ptInput
+        Value = Null
+      end>
+  end
+  object dtsCursosDoProfessor: TDataSource
+    Left = 192
+    Top = 504
+  end
+  object cdsCursosDoProfessor: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 312
+    Top = 504
+  end
 end
