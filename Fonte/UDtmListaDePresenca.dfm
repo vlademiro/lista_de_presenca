@@ -1,6 +1,6 @@
 object DtmListaDePresenca: TDtmListaDePresenca
   OldCreateOrder = False
-  Height = 492
+  Height = 595
   Width = 608
   object cnxListaDePresenca: TFDConnection
     Params.Strings = (
@@ -216,5 +216,26 @@ object DtmListaDePresenca: TDtmListaDePresenca
     DataSet = qryProfessor
     Left = 168
     Top = 384
+  end
+  object qryAssProfessor: TFDQuery
+    Active = True
+    Connection = cnxListaDePresenca
+    SQL.Strings = (
+      'select PRO_CODIGO, PRO_NOME from professor')
+    Left = 104
+    Top = 448
+  end
+  object dspAssProfessor: TDataSetProvider
+    DataSet = qryAssProfessor
+    Left = 184
+    Top = 448
+  end
+  object cdsAssProfessor: TClientDataSet
+    Active = True
+    Aggregates = <>
+    Params = <>
+    ProviderName = 'dspAssProfessor'
+    Left = 272
+    Top = 448
   end
 end
